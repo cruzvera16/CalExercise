@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var currentOperation = ""
     var currentSign = ""
     var result = ""
+    var dotPresent = false
     
     
     @IBAction func numberPressed(btn: UIButton!) {
@@ -26,19 +27,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dotPressed(dot: UIButton) {
-        runningNumber += "."
-        outputDisplay.text = runningNumber
+        if dotPresent == false {
+            runningNumber += "."
+            outputDisplay.text = runningNumber
+            dotPresent = true
+        }
+        
     }
     
     @IBAction func signPressed(sign: UIButton) {
-        if currentSign != "" {
+        if currentSign == "" {
             currentSign = "-"
         } else {
             currentSign = ""
         }
     
         outputDisplay.text = "\(currentSign) \(runningNumber)"
-        runningNumber = outputDisplay.text!
+        
     }
 
     override func viewDidLoad() {
