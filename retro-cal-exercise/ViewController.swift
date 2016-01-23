@@ -52,15 +52,6 @@ class ViewController: UIViewController {
         runningNumber = "\(-Double(runningNumber)!)"
         outputDisplay.text = runningNumber
         
-        
-//        if currentSign == "" {
-//            currentSign = "-"
-//        } else {
-//            currentSign = ""
-//        }
-//    
-//        outputDisplay.text = "\(currentSign) \(runningNumber)"
-        
     }
     
     @IBAction func onMultiplyPressed(sender: AnyObject) {
