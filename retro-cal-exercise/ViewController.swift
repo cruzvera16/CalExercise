@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     @IBAction func signPressed(sign: UIButton) {
         runningNumber = outputDisplay.text!
         runningNumber = "\(-Double(runningNumber)!)"
-        outputDisplay.text = runningNumber
+        outputDisplay.text = runningNumber 
         
     }
     
