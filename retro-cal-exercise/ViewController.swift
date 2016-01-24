@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputDisplay: UILabel!
     
-    // just to cooment to see how git changes
-    
     enum Operation: String {
         case Divide = "/"
         case Multiply = "*"
