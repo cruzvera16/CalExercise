@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var outputDisplay: UILabel!
     
+    // just to cooment to see how git changes
+    
     enum Operation: String {
         case Divide = "/"
         case Multiply = "*"
@@ -50,7 +52,7 @@ class ViewController: UIViewController {
     @IBAction func signPressed(sign: UIButton) {
         runningNumber = outputDisplay.text!
         runningNumber = "\(-Double(runningNumber)!)"
-        outputDisplay.text = runningNumber 
+        outputDisplay.text = runningNumber
         
     }
     
